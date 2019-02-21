@@ -1,0 +1,37 @@
+html,
+body,
+div,
+input,
+header,
+h2,
+p,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.main_color {
+    color: #27ddfc;
+}
+
+.homepage_font_color {
+    color: #0cdee2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: MFXingHei_Noncommercial-Bold;
+    src: url('/lib/font/MFXingHei_Noncommercial-Bold.otf');
+}
+
+@font-face {
+    font-family: AdobeHeitiStd-Regular;
+    src: url('/lib/font/adobeheitistd-regular.otf');
+}

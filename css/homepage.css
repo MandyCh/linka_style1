@@ -1,0 +1,218 @@
+@charset "utf-8";
+body {
+    background: url("../image/bg-homepage.png") no-repeat;
+    height: 1080px;
+}
+
+.bg {
+    width: 1099px;
+    height: 891px;
+}
+
+header {
+    background: url("/image/bg1.png") no-repeat bottom;
+    padding-left: 10px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.nav {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 10px;
+    top: -40px
+}
+
+.nav>div {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00a8ff;
+}
+
+.nav>div>span {
+    z-index: 10;
+}
+
+.nav>div>span>a.active {
+    color: #fff;
+}
+
+.nav>div>span:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.home>span {
+    position: absolute;
+    bottom: 5px
+}
+
+.repair>span {
+    transform: rotate(120deg);
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+.repair>img {
+    display: none;
+}
+
+.fund>img {
+    display: none;
+}
+
+.fund>span {
+    transform: rotate(-120deg);
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+h2 {
+    margin: 0 auto;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 30px;
+    color: #00a8ff;
+}
+
+.content {
+    position: relative;
+}
+
+.amounts {
+    position: absolute;
+    top: 230px;
+    width: 349px;
+    height: 394px;
+}
+
+.amounts .item {
+    width: 349px;
+    height: 89px;
+    background: url("/image/bg_item.png");
+    padding: 0 78px;
+}
+
+.item p {
+    font-family: MFXingHei_Noncommercial-Bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.item h5 {
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #00a8ff;
+    margin-left: 110px;
+}
+
+.energy {
+    position: absolute;
+    top: 600px;
+    width: 364px;
+    height: 371px;
+}
+
+.energy_content {
+    padding: 0 50px 20px 20px;
+}
+
+.energy_ring {
+    margin: 30px 40px;
+}
+
+.energy h3 {
+    font-size: 22px;
+    background: url("/image/bg_energy.png") no-repeat left bottom;
+    padding: 5px 5px 5px 47px;
+}
+
+.power {
+    width: 409px;
+    height: 332px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.power_title {
+    margin-bottom: 20px;
+}
+
+.power h3,
+.gas h3 {
+    font-size: 22px;
+    background: url("/image/bg_energy.png") no-repeat right bottom;
+    padding: 5px 5px 5px 47px;
+    width: 156px;
+    float: right;
+}
+
+.water {
+    width: 416px;
+    height: 151px;
+    position: absolute;
+    right: 0;
+    top: 440px;
+}
+
+.water h3 {
+    font-size: 22px;
+    background: url("/image/bg_energy.png") no-repeat right bottom;
+    padding: 5px 5px 5px 47px;
+    width: 156px;
+    margin-left: 250px;
+}
+
+.gas {
+    width: 409px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 680px;
+}
+
+.water>.liquidfill_group {
+    margin-top: -50px;
+}
+
+.map {
+    position: absolute;
+    left: 400px;
+    top: 50px
+}
+
+.legend_group {
+    position: absolute;
+    left: 400px;
+    top: 800px;
+    width: 325px;
+    height: 143px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legend_group>div {
+    width: 159px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.legend_group>div>h3 {
+    background: url('/image/bg_legend.png') no-repeat right bottom;
+    font-size: 16px;
+    width: 132px;
+    text-align: center;
+    padding: 5px 0;
+}

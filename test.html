@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input {
+            background: white;
+        }
+        
+        .yellow {
+            background: yellow
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <input class="white" type="button" value="1" />
+    <input type="button" value="2" />
+    <input type="button" value="3" />
+    <div style="display: block">111</div>
+    <div>222</div>
+    <div>333</div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var but = document.getElementsByTagName("input");
+            var odiv = document.getElementsByTagName("div");
+            for (var i = 0; i < but.length; i++) {
+                but[i].index = i;
+                but[i].onclick = function() {
+                    for (var i = 0; i < but.length; i++) {
+                        but[i].className = "";
+                        odiv[i].style.display = "none";
+                    }
+                    this.className = "yellow";
+                    odiv[this.index].style.display = "block";
+                }
+            }
+
+        };
+    </script>
+</body>
+
+</html>

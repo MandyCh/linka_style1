@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test" style="width: 1000px;height: 800px;"></div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="./node_modules/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script>
+        var cc = echarts.init(document.getElementById('test'));
+        option = {
+            backgroundColor: '#000',
+            globe: {
+                baseTexture: "./image/earth.png",
+                heightTexture: "data-gl/asset/world.topo.bathy.200401.jpg",
+                displacementScale: 0.04,
+                shading: 'realistic',
+                environment: 'data-gl/asset/starfield.jpg',
+                realisticMaterial: {
+                    roughness: 0.9
+                },
+                postEffect: {
+                    enable: true
+                },
+                light: {
+                    main: {
+                        intensity: 5,
+                        shadow: true
+                    },
+                    ambientCubemap: {
+                        // texture: 'data-gl/asset/pisa.hdr',
+                        diffuseIntensity: 0.2
+                    }
+                }
+            }
+        };
+        cc.setOption(option);
+    </script>
+</body>
+
+</html>

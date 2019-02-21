@@ -1,0 +1,118 @@
+.login {
+    min-height: 976px;
+    min-width: 1903px;
+    position: relative;
+    background: url('../image/bg-login.png') no-repeat;
+}
+
+.form {
+    width: 399px;
+    height: 444px;
+    background: url('../image/bg-box.png');
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+    padding: 109px 43px 20px 43px;
+}
+
+.group {
+    position: relative;
+    display: table;
+    border-collapse: separate
+}
+
+.input-group-addon {
+    background-color: transparent;
+    border-color: #27ddfc;
+}
+
+.input-group>input {
+    background-color: transparent;
+    width: 312px;
+    height: 50px;
+    border-color: #27ddfc;
+    border-left: none;
+}
+
+.input-group {
+    width: 312px;
+    height: 50px;
+    border-color: #27ddfc;
+    margin: 20px 0;
+}
+
+.form-control {
+    background-color: transparent;
+}
+
+.input-group>input::-webkit-input-placeholder {
+    color: #27ddfc;
+}
+
+.input-group>input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #27ddfc;
+}
+
+.input-group>input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #27ddfc;
+}
+
+.input-group>input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #27ddfc;
+}
+
+.btn {
+    width: 304px;
+    height: 46px;
+    background-color: #27ddfc;
+    color: #004a57;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 18px;
+    border-radius: 0%;
+}
+
+.line {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 34px;
+    width: 1px;
+    height: 41px;
+    background: url("../image/line_1.png") no-repeat;
+}
+
+.auto_login {
+    width: 312px;
+    height: 50px;
+    display: table;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 1px #27ddfc;
+    /* background-color: transparent; */
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.checkBox input[type=checkbox]:checked {
+    background: url("../image/checkbox_icon.png") no-repeat center;
+}
+
+.title {
+    width: 767px;
+    height: 200px;
+    position: absolute;
+    left: 223px;
+    top: 357px;
+}
+
+a {
+    display: block;
+    text-align: center
+}

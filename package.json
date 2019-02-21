@@ -1,0 +1,19 @@
+{
+  "name": "linka-style3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "echarts": "^4.2.0-rc.2",
+    "echarts-gl": "^1.1.1",
+    "echarts-liquidfill": "^2.0.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
+}

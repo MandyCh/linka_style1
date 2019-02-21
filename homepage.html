@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>首页</title>
+</head>
+
+
+<body>
+    <header>
+        <h2>综合管理平台</h2>
+    </header>
+
+    <div class="content">
+        <div class="nav">
+            <div class="fund">
+                <img src="./image/fund.png" alt="" class="img_fund">
+                <span><a href="dashboard.html" target="_blank" class="txt_fund">资产档案</a></span>
+            </div>
+            <div class="repair">
+                <img src="./image/repair.png" alt="" class='img_repair'>
+                <span><a href="login.html" class="txt_repair">维修保养</a></span>
+            </div>
+            <div class="home">
+                <img src="./image/home.png" alt="" class="img_home">
+                <span><a href="homepage.html" class=" txt_home active">首页</a></span>
+            </div>
+        </div>
+        <div class="amounts">
+            <div class="item">
+                <p class="common homepage_font_color">2680</p>
+                <h5>公共建筑</h5>
+            </div>
+            <div class="item">
+                <p class="business homepage_font_color">1012</p>
+                <h5>商业综合体</h5>
+            </div>
+            <div class="item">
+                <p class="office homepage_font_color">1550</p>
+                <h5>写字楼</h5>
+            </div>
+            <div class="item">
+                <p class="factory homepage_font_color">1380</p>
+                <h5>工厂</h5>
+            </div>
+        </div>
+
+        <div class="map" style="width: 1000px;height: 800px;"></div>
+
+        <div class="legend_group">
+            <div class="com_legend">
+                <img src="./image/common.png" alt="">
+                <h3 class="com_titles_legend">公共建筑</h3>
+            </div>
+            <div class="off_legend">
+                <img src="./image/business.png" alt="">
+                <h3 class="com_titles_legend">商业综合体</h3>
+            </div>
+            <div class="business_legend">
+                <img src="./image/office.png" alt="">
+                <h3 class="com_titles_legend">写字楼</h3>
+            </div>
+            <div class="fac_legend">
+                <img src="./image/factory.png" alt="">
+                <h3 class="com_titles_legend">工厂</h3>
+            </div>
+        </div>
+
+        <div class="energy">
+            <h3 class="energy_title homepage_font_color">能耗总占比</h3>
+            <div class="energy_content">
+                <div class="ratios">
+                    <div class="fac_ratio" style="width: 300px;height: 100px;"></div>
+                    <!-- <div class="com_ratio"></div>
+                    <div class="off_ratio"></div>
+                    <div class="bus_ratio"></div> -->
+                </div>
+                <div class="energy_ring" style="width: 200px;height: 200px;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="power">
+            <h3 class="power_title homepage_font_color">耗电量</h3>
+            <div class="power_bar" style="width: 400px;height: 337px;"></div>
+        </div>
+
+        <div class="water">
+            <h3 class="water_title homepage_font_color">用水量</h3>
+            <div class="liquidfill_group" style="width: 400px;height: 280px;">
+            </div>
+        </div>
+
+        <div class="gas">
+            <h3 class="gas_title homepage_font_color">用气量</h3>
+            <div class="gas_line" style="width: 400px;height: 297px;"></div>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="./lib/echarts-all.js"></script>
+    <script src="./node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
+    <script src="./js/test.js"></script>
+    <!-- <script src="./js/pie.js"></script> -->
+    <script src="./js/graphics.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

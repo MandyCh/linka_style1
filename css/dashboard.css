@@ -1,0 +1,350 @@
+body {
+    background: url("/image/bg-4.png") no-repeat;
+}
+
+header {
+    background: url("/image/bg1.png") no-repeat bottom;
+    /* height: 50px; */
+    padding-left: 10px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0 auto;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 30px;
+    color: #00a8ff;
+}
+
+.main {
+    position: relative;
+}
+
+.main .btn_back {
+    position: absolute;
+    left: 103px;
+    top: 20px;
+}
+
+.main .airconditioner,
+.main .car,
+.main .light,
+.main .door,
+.main .fire,
+.main .video {
+    position: relative;
+    top: 180px;
+    left: 30px;
+    width: 360px;
+    height: 360px;
+    background: url("/image/bg-air.png") no-repeat;
+}
+
+.main .airconditioner .heading,
+.main .car .heading,
+.main .light .heading,
+.main .door .heading,
+.main .fire .heading,
+.main .video .heading {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: MicrosoftYaHeiLight;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.main .airconditioner .piechart,
+.main .car .piechart,
+.main .light .piechart,
+.main .door .piechart,
+.main .fire .piechart,
+.main .video .piechart {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.main .car {
+    background: url("/image/bg-graphics.png") no-repeat;
+    position: relative;
+    top: 240px;
+}
+
+.main .car .msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.main .car .msg .left {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .car .msg .left p {
+    color: #006cfe;
+    font-size: 15px;
+}
+
+.main .car .msg .left span {
+    color: #a7a7a7;
+    font-size: 10px;
+}
+
+.main .car .msg .right {
+    background: url("/image/bg-car.png") no-repeat;
+    background-position-x: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .car .msg .right .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    padding-top: 1px;
+}
+
+.main .car .msg .right .text .unable,
+.main .car .msg .right .text .enable {
+    display: flex;
+    height: 25px;
+}
+
+.main .car .msg .right .text .unable p:nth-child(1),
+.main .car .msg .right .text .enable p:nth-child(1) {
+    color: #007b40;
+    font-size: 15px;
+    text-align: right;
+    align-self: flex-start;
+    width: 34px;
+}
+
+.main .car .msg .right .text .unable p:nth-child(2),
+.main .car .msg .right .text .enable p:nth-child(2) {
+    color: #a7a7a7;
+    font-size: 8px;
+    align-self: flex-end;
+}
+
+.main .car .msg .right .text .enable p:nth-child(1) {
+    color: #00ff84;
+}
+
+.main .car .tableInfo {
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main .car .tableInfo table {
+    width: 286px;
+}
+
+.main .car .tableInfo table th {
+    font-size: 9px;
+    color: #02a3b5;
+}
+
+.main .car .tableInfo table tr:nth-child(1) {
+    background-color: #014b4d;
+}
+
+.main .car .tableInfo table tr {
+    font-size: 8px;
+    line-height: 13px;
+}
+
+.main .car .tableInfo table tr td:nth-child(1) {
+    color: #00ff60;
+}
+
+.main .car .tableInfo table tr td:nth-child(2) {
+    color: #6db5ff;
+}
+
+.main .car .tableInfo table tr td:nth-child(3) {
+    color: #ffffff;
+}
+
+.main .light {
+    background: none;
+    position: absolute;
+    top: 600px;
+    left: 440px;
+}
+
+.main .door {
+    background: url("/image/bg_door.png") no-repeat;
+    position: absolute;
+    top: 770px;
+    left: 880px;
+    width: 550px;
+    height: 184px;
+}
+
+.main .door .barchart_door {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.main .door .content {
+    width: 200px;
+    height: 94px;
+    position: absolute;
+    bottom: 30px;
+    left: 300px;
+    background: url("/image/bg-door-cnt.png") no-repeat;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 8px;
+}
+
+.main .door .content .enter {
+    align-self: flex-start;
+}
+
+.main .door .content .enter p:nth-child(1) {
+    color: #00ff66;
+    font-size: 29px;
+}
+
+.main .door .content .lock {
+    align-self: flex-end;
+}
+
+.main .door .content .lock p:nth-child(1) {
+    color: #d50a0a;
+    font-size: 29px;
+}
+
+.main .fire {
+    background: url("/image/bg-fire.png") no-repeat;
+    position: absolute;
+    top: 510px;
+    left: 1520px;
+    height: 445px;
+    width: 360px;
+}
+
+.main .fire .msg {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 320px;
+}
+
+.main .fire .msg .temp,
+.main .fire .msg .smoke,
+.main .fire .msg .hand,
+.main .fire .msg .other {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
+
+.main .fire .msg .temp .nums,
+.main .fire .msg .smoke .nums,
+.main .fire .msg .hand .nums,
+.main .fire .msg .other .nums {
+    width: 80px;
+    height: 53px;
+    margin-top: 6px;
+    background: url("/image/temp.png") no-repeat center;
+    text-align: center;
+    line-height: 53px;
+    color: #00fff6;
+}
+
+.main .fire .msg .smoke .nums {
+    background: url("/image/smoke.png") no-repeat center;
+    color: #a800ff;
+}
+
+.main .fire .msg .hand .nums {
+    background: url("/image/hand.png") no-repeat center;
+    color: #2aff00;
+}
+
+.main .fire .msg .other .nums {
+    background: url("/image/other.png") no-repeat center;
+    color: #ff0000;
+}
+
+.main .fire .linechart {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.main .video {
+    background: url("/image/bg-video.png") no-repeat center;
+    width: 360px;
+    height: 370px;
+    position: absolute;
+    top: 50px;
+    left: 1520px;
+}
+
+.main .video .btn_toggle {
+    margin-left: 100px;
+}
+
+.main .video .ringchart {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+.main .video .msg {
+    position: absolute;
+    top: 260px;
+    left: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .video .msg .hard,
+.main .video .msg .camera,
+.main .video .msg .audio {
+    text-align: center;
+}
+
+.main .video .msg .hard .nums,
+.main .video .msg .camera .nums,
+.main .video .msg .audio .nums {
+    color: #fca000;
+    font-size: 37px;
+}
+
+.main .video .msg .hard .name,
+.main .video .msg .camera .name,
+.main .video .msg .audio .name {
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 10px;
+    background: url("/image/tag.png") no-repeat left;
+}
+
+
+/*# sourceMappingURL=dashboard.css.map */

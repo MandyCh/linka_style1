@@ -1,0 +1,295 @@
+@charset "utf-8";
+body {
+    background: url("/image/bg-2.png") no-repeat;
+}
+
+header {
+    background: url("/image/bg1.png") no-repeat bottom;
+    /* height: 50px; */
+    padding-left: 10px;
+    padding-top: 22px;
+    text-align: center;
+    h2 {
+        margin: 0 auto;
+        font-family: MicrosoftYaHeiLight;
+        font-size: 30px;
+        color: #00a8ff;
+    }
+}
+
+.main {
+    position: relative;
+    .btn_back {
+        position: absolute;
+        left: 103px;
+        top: 20px;
+    }
+    .airconditioner {
+        position: relative;
+        top: 180px;
+        left: 30px;
+        width: 360px;
+        height: 360px;
+        background: url('/image/bg-air.png') no-repeat;
+        .heading {
+            position: absolute;
+            top: 22px;
+            left: 30px;
+            display: flex;
+            justify-content: center;
+            font-family: MicrosoftYaHeiLight;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .piechart {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+    }
+    .car {
+        @extend .airconditioner;
+        background: url('/image/bg-graphics.png') no-repeat;
+        position: relative;
+        top: 240px;
+        .msg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            .left {
+                width: 100px;
+                height: 100px;
+                color: #fff;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                p {
+                    color: #006cfe;
+                    // font-weight: bold;
+                    font-size: 15px;
+                }
+                span {
+                    color: #a7a7a7;
+                    font-size: 10px;
+                }
+            }
+            .right {
+                background: url('/image/bg-car.png') no-repeat;
+                background-position-x: 45px;
+                display: flex;
+                justify-content: center;
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-right: 20px;
+                    padding-top: 1px;
+                    .unable {
+                        display: flex;
+                        height: 25px;
+                        p:nth-child(1) {
+                            color: #007b40;
+                            font-size: 15px;
+                            text-align: right;
+                            align-self: flex-start;
+                            width: 34px;
+                        }
+                        p:nth-child(2) {
+                            color: #a7a7a7;
+                            font-size: 8px;
+                            align-self: flex-end;
+                        }
+                    }
+                    .enable {
+                        @extend .unable;
+                        p:nth-child(1) {
+                            color: #00ff84;
+                        }
+                    }
+                }
+            }
+        }
+        .tableInfo {
+            position: absolute;
+            top: 160px;
+            left: 35px;
+            text-align: center;
+            margin: 0 auto;
+            table {
+                width: 286px;
+                th {
+                    font-size: 9px;
+                    color: #02a3b5;
+                }
+                tr:nth-child(1) {
+                    background-color: #014b4d;
+                }
+                tr {
+                    font-size: 8px;
+                    line-height: 13px;
+                    td:nth-child(1) {
+                        color: #00ff60;
+                    }
+                    td:nth-child(2) {
+                        color: #6db5ff;
+                    }
+                    td:nth-child(3) {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .light {
+        @extend .airconditioner;
+        background: none;
+        position: absolute;
+        top: 600px;
+        left: 440px;
+    }
+    .door {
+        @extend .airconditioner;
+        background: url('/image/bg_door.png') no-repeat;
+        position: absolute;
+        top: 770px;
+        left: 880px;
+        width: 550px;
+        height: 184px;
+        .barchart_door {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+        .content {
+            width: 200px;
+            height: 94px;
+            position: absolute;
+            bottom: 30px;
+            left: 300px;
+            background: url('/image/bg-door-cnt.png') no-repeat;
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+            font-size: 8px;
+            .enter {
+                align-self: flex-start;
+                p:nth-child(1) {
+                    color: #00ff66;
+                    font-size: 29px;
+                }
+            }
+            .lock {
+                align-self: flex-end;
+                p:nth-child(1) {
+                    color: #d50a0a;
+                    font-size: 29px;
+                }
+            }
+        }
+    }
+    .fire {
+        @extend .airconditioner;
+        background: url('/image/bg-fire.png') no-repeat;
+        position: absolute;
+        top: 510px;
+        left: 1520px;
+        height: 445px;
+        width: 360px;
+        .msg {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            width: 320px;
+            .temp {
+                color: #fff;
+                text-align: center;
+                font-size: 10px;
+                .nums {
+                    width: 80px;
+                    height: 53px;
+                    margin-top: 6px;
+                    background: url('/image/temp.png') no-repeat center;
+                    text-align: center;
+                    line-height: 53px;
+                    color: #00fff6;
+                }
+            }
+            .smoke {
+                @extend .temp;
+                .nums {
+                    background: url('/image/smoke.png') no-repeat center;
+                    color: #a800ff;
+                }
+            }
+            .hand {
+                @extend .temp;
+                .nums {
+                    background: url('/image/hand.png') no-repeat center;
+                    color: #2aff00;
+                }
+            }
+            .other {
+                @extend .temp;
+                .nums {
+                    background: url('/image/other.png') no-repeat center;
+                    color: #ff0000;
+                }
+            }
+        }
+        .linechart {
+            position: absolute;
+            top: 150px;
+            left: 20px;
+        }
+    }
+    .video {
+        @extend .airconditioner;
+        background: url('/image/bg-video.png') no-repeat center;
+        width: 360px;
+        height: 370px;
+        position: absolute;
+        top: 50px;
+        left: 1520px;
+        .btn_toggle {
+            margin-left: 100px;
+        }
+        .ringchart {
+            position: absolute;
+            top: 50px;
+            left: 80px
+        }
+        .msg {
+            position: absolute;
+            top: 260px;
+            left: 30px;
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            .hard {
+                text-align: center;
+                .nums {
+                    color: #fca000;
+                    font-size: 37px;
+                }
+                .name {
+                    color: #ffffff;
+                    font-size: 12px;
+                    padding-left: 10px;
+                    background: url('/image/tag.png') no-repeat left;
+                }
+            }
+            .camera {
+                @extend .hard;
+            }
+            .audio {
+                @extend .hard;
+            }
+        }
+    }
+}

@@ -1,0 +1,243 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: #fff;
+}
+
+body {
+    background: url('../image/bg_gl.jpg')
+}
+
+header {
+    padding: 0 20px;
+    height: 80px;
+    color: #71E2E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(76, 122, 122);
+    .date-wrapper {
+        span {
+            font-size: 16px;
+        }
+        a {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
+
+.main {
+    position: relative;
+    .pipe_wrapper {
+        position: absolute;
+        top: 20px;
+        .pipe_title {
+            color: #fff;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+        .pipe_content_wrapper {
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgb(76, 122, 122);
+            border-left: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .pipe {
+                width: 180px;
+                height: 80px;
+                border: 1px solid rgb(76, 122, 122);
+                padding-left: 10px;
+                .pipe_name {
+                    color: #71E2E1;
+                    text-align: right;
+                    font-size: 16px;
+                    padding: 4px 2px 4px 0;
+                    border-bottom: 1px solid rgb(76, 122, 122);
+                }
+                .pipe_info_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 14px;
+                    color: #fff;
+                    padding-left: 5px;
+                    padding-top: 5px
+                }
+            }
+        }
+    }
+    .device_wrapper {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        .device_title {
+            color: #fff;
+            text-align: right;
+            padding-bottom: 5px;
+            padding-right: 5px;
+        }
+        .device_content_wrapper {
+            width: 300px;
+            height: 100%;
+            padding: 20px 30px;
+            border: 1px solid rgb(76, 122, 122);
+            border-right: none;
+            .device {
+                width: 240px;
+                height: 90px;
+                color: #71E2E1;
+                border: 1px solid rgb(76, 122, 122);
+                display: flex;
+                flex-direction: row;
+                .device_icon {
+                    width: 150px;
+                    border-right: 1px solid rgb(76, 122, 122);
+                    text-align: center;
+                    line-height: 86px;
+                }
+                .device_info {
+                    width: 89px;
+                    font-size: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 5px 0;
+                    .device_name {
+                        font-size: 16px;
+                        border-bottom: 1px solid rgb(76, 122, 122);
+                        text-align: justify;
+                        text-align-last: justify;
+                        padding: 0 3px;
+                    }
+                    .device_status {
+                        font-size: 16px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .people_wrapper {
+        position: absolute;
+        width: 400px;
+        top: 470px;
+        // height: 200px;
+        .people_title {
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+        .people_content_wrapper {
+            padding: 15px;
+            border: 1px solid rgb(76, 122, 122);
+            border-left: none;
+            .people_type_wrapper {
+                background: rgba(113, 226, 226, 0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .people_current_board {
+                    border: 1px solid #71E2E1;
+                    width: 80px;
+                    height: 80px;
+                    font-size: 40px;
+                    text-align: center;
+                    background: rgba(113, 226, 226, 0.4);
+                    // box-shadow: 2px 2px 1px -1px rgb(41, 39, 39);
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .people_type {
+                    width: 200px;
+                    font-size: 16px;
+                }
+            }
+            .people_access_table {
+                margin-top: 20px;
+                table {
+                    width: 358px;
+                    text-align: center;
+                    tr {
+                        height: 24px;
+                        th {
+                            background: rgba(113, 226, 226, 0.4);
+                            text-align: center;
+                        }
+                        td {
+                            padding: 0 5px
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .district_wrapper_07 {
+        position: absolute;
+        left: 450px;
+        top: 150px;
+        .district_content_wrapper {
+            background-color: rgba(14, 27, 27, 0.8);
+            width: 400px;
+            display: flex;
+            padding: 4px 0;
+            .district_info_wrapper {
+                margin: 10px 0 0px 10px;
+                padding: 0 10px 0 10px;
+                border-left: 1px solid rgba(113, 226, 226, 0.4);
+                .text {
+                    display: flex;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid rgba(113, 226, 226, 0.4);
+                    div {
+                        width: 70px;
+                        height: 50px;
+                        // text-align: center;
+                        p:nth-child(1) {
+                            color: #05F4FF;
+                        }
+                        p:nth-child(2) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .icongroup {
+                    // display: flex;
+                    // justify-content: center;
+                    margin-top: 20px;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .district_wrapper_20 {
+        @extend .district_wrapper_07;
+        top: 400px;
+    }
+    .district_target {
+        width: 1920px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid rgba(113, 226, 226, 0.4);
+        height: 170px;
+        position: absolute;
+        top: 820px;
+        border-left: none;
+        border-right: none;
+        padding: 0 60px;
+    }
+}

@@ -1,0 +1,35 @@
+<script>
+    $(document).ready(function() {
+        $(".icon-scrollTop").hide();
+        $(function() {
+            var height = $(window).height();
+            //网页全文的高度-footer的高度
+            var height1 = $(window).scrollTop() - 317;
+            console.log(height);
+            console.log($(window).scrollTop());
+            console.log(document.body.scrollHeight);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > height1) {
+                    $(".icon-scrollTop").css('bottom', "337px");
+                    $(".icon-scrollTop").find('a').css('bottom', '337px');
+                } else {
+                    $(".icon-scrollTop").css('bottom', "50px");
+                    $(".icon-scrollTop").find('a').css('bottom', '50px');
+                }
+                if ($(window).scrollTop() > 0) {
+                    $(".icon-scrollTop").fadeIn(500);
+                } else {
+                    $(".icon-scrollTop").fadeOut(500);
+                }
+
+            })
+
+            $(".icon-scrollTop").click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+            })
+
+        })
+    })
+</script>

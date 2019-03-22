@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+.clearFix {
+    clear: both;
+}
+
+.mainPage {
+    width: 100%;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.white {
+    color: #fff;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1263px;
+    height: 70px;
+}
+
+.content .logo {
+    width: 160px;
+    height: 70px;
+    margin-right: 80px;
+    line-height: 70px;
+    background: url(../img/logo.png) no-repeat center;
+    float: left;
+}
+
+.content .search {
+    width: 300px;
+    height: 38px;
+    padding-left: 10px;
+}
+
+.content .link {
+    width: 500px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content .link li {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.content .link a {
+    display: block;
+    color: #000;
+}
+
+.content .link .login-register-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 199px;
+    height: 70px;
+}
+
+.login-register-box button {
+    height: 40px;
+    width: 60px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #169AF3;
+    color: #fff;
+}
+
+.register {
+    background-color: #fff;
+}
+
+header {
+    width: 1903px;
+}
+
+.navigation {
+    background-color: #2C323B;
+    width: 1903px;
+    min-width: 1263px;
+    margin: 0 auto;
+}
+
+.navigation-content {
+    min-width: 1263px;
+    width: 1263px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+.navigation-content .left {
+    float: left;
+}
+
+.navigation-content .right {
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.navigation ul>li {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.navigation ul>li>a {
+    color: #fff;
+    display: block;
+}
+
+.navigation-content .left a:hover,
+.navigation-content .active a {
+    background-color: #0C8ED9;
+}
+
+.navigation-content .right a:hover {
+    color: #0C8ED9;
+}
+
+#container {
+    width: 1903px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#list {
+    width: 9515px;
+    height: 317px;
+    position: absolute;
+    z-index: 1;
+}
+
+#list img {
+    float: left;
+    width: 1903px;
+}
+
+#buttons {
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    bottom: 80px;
+    left: 850px;
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    /* border: 1px solid #fff; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 5px;
+}
+
+#buttons .on {
+    background: orangered;
+}
+
+.arrow {
+    cursor: pointer;
+    display: none;
+    line-height: 56px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    background-color: RGBA(0, 0, 0, .3);
+    color: #fff;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.download {
+    background: #0F5A9A;
+    opacity: 0.7;
+    margin: 0 auto;
+    position: relative;
+    bottom: 60px;
+    z-index: 3;
+    width: 1902px;
+}
+
+.download-content {
+    width: 602px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.download-content>ul>li {
+    margin-top: 20px;
+    float: left;
+    width: 200px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+.download-content>ul>li>a {
+    color: #fff;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.download-content>ul>li:first-child {
+    border: none;
+}
+
+.maincontent {
+    width: 1903px;
+}
+
+.main {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 1263px;
+    /* overflow: hidden; */
+}
+
+.main .menu {
+    height: 520px;
+}
+
+.main .menu .title {
+    height: 100px;
+    line-height: 100px;
+}
+
+.main .title h1 {
+    font-weight: 100;
+    display: inline;
+}
+
+.main .title span::after {
+    clear: both;
+}
+
+.quality-choice {
+    float: left;
+    width: 800px;
+    height: 100%;
+}
+
+.hot {
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+
+.quality-choice-content .item {
+    float: left;
+    width: 190px;
+    height: 190px;
+    margin: 4px;
+    position: relative;
+}
+
+.quality-choice-content div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.quality-choice-content .item .detail {
+    position: absolute;
+    bottom: 0;
+    background-color: RGBA(0, 0, 0, .3);
+    color: #fff;
+    overflow: hidden;
+}
+
+.quality-choice-content .item .lg {
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 380px;
+}
+
+.quality-choice-content .item .sm {
+    height: 40px;
+    width: 180px;
+    padding-left: 5px;
+    font-size: 14px
+}
+
+.hot-content {
+    width: 400px;
+    height: 100px;
+    margin-top: 4px;
+}
+
+.hot-content .item {
+    margin-bottom: 44px;
+    background-color: #eee;
+}
+
+.hot-content img {
+    widows: 100px;
+    height: 100px;
+    float: left;
+}
+
+.hot-content .rank {
+    height: 80px;
+    width: 250px;
+    margin-left: 100px;
+    padding: 10px 0 10px 10px;
+}
+
+.hot-content .rank p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 10px 0;
+}
+
+.advertisement {
+    width: 1263px;
+    /* margin-top: 50px; */
+}
+
+.advertisement img {
+    width: 100%;
+}
+
+.radio .hot-radio {
+    width: 800px;
+    float: left;
+}
+
+.radio .category {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+}
+
+.radio .category .item {
+    width: 114px;
+    margin: 22px
+}
+
+.hot-radio .title {
+    width: 760px;
+    height: 80px;
+    line-height: 80px;
+    padding-right: 20px;
+}
+
+.partner {
+    width: 1263px;
+}
+
+.partner .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.partner .content div {
+    width: 130px;
+    height: 60px;
+    border: 1px dashed #ccc;
+    margin-right: 20px;
+    margin-bottom: 20px
+}
+
+.footerWrapper {
+    background-color: rgba(44, 50, 59);
+    width: 100%;
+    min-width: 1263px;
+    width: 1903px;
+    /* position: fixed;
+    bottom: 0; */
+}
+
+.footer {
+    padding-bottom: 50px;
+    width: 1263px;
+    margin: 0 auto;
+}
+
+.footer .links {
+    position: relative;
+    zoom: 1;
+    border-bottom: 1px solid #3d424a;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #b1b3b9;
+    text-align: center;
+    position: relative;
+}
+
+.footer .links a {
+    color: #b1b3b9;
+    padding: 10px;
+}
+
+.footer .copyright {
+    width: 1000px;
+    margin: 40px auto 0;
+    font-size: 14px;
+}
+
+.footer .copyright p {
+    line-height: 30px;
+    text-align: center;
+    color: #b1b3b9;
+}
+
+.footer .copyright a {
+    color: #999;
+}
+
+.icon-scrollTop,
+.icon-scrollTop a {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+}
+
+.icon-scrollTop a {
+    display: block;
+    background: url(../img/scrollTop1.png) no-repeat left top;
+}
+
+.friendLink {
+    margin-top: 30px;
+}
+
+.friendLink .itemTitle {
+    background: url(../img/friendLink.jpg) no-repeat 0 0;
+    padding-bottom: 30px;
+    height: 30px;
+}
+
+.friendLink .itemContent {
+    width: 1000px;
+    height: 80px;
+    padding-bottom: 20px;
+    zoom: 1;
+}
+
+.friendLink .itemContent a {
+    overflow: hidden;
+    display: block;
+    width: 125px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #555;
+    float: left;
+}
+
+.friendLink .itemTitle h3 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-right: 25px;
+    color: #555;
+    font-size: 0;
+    float: left;
+}
+
+.friendLink .itemTitle .more {
+    margin-top: 7px;
+    color: #999;
+    float: right;
+}
+
+.friendLink .itemTitle a.more:hover {
+    color: #009af3;
+}
+
+.HotSinger {
+    width: 330px;
+    float: right;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.HotSinger .itemTitle {
+    overflow: hidden;
+    width: 350px;
+    background: url(../img/hotsinger.jpg) no-repeat 0 0;
+    height: 30px;
+    padding-bottom: 30px;
+}
+
+.HotSinger .itemTitle h3 {
+    margin-right: 15px;
+    /* display: inline-block; */
+    width: 120px;
+    height: 30px;
+    margin-right: 15px;
+    color: #555;
+    font-size: 0;
+    float: left;
+}
+
+.HotSinger .itemTitle h3 b {
+    font-weight: 400;
+    color: #009af3;
+}
+
+.HotSinger .itemTitle .tabT {
+    width: 210px;
+}
+
+.HotSinger .itemTitle .tabT {
+    line-height: 30px;
+    float: right;
+}
+
+.HotSinger .itemTitle .tabT span {
+    margin-right: 20px;
+    margin-right: 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.HotSinger .itemTitle .tabT span:last-child {
+    margin-right: 0;
+}
+
+.HotSinger .itemTitle .more {
+    /* margin-top: 7px; */
+    color: #999;
+}
+
+.HotSinger .itemTitle .tabT span.active,
+.HotSinger .itemTitle .tabT span:hover,
+.HotSinger .itemTitle a.more:hover {
+    color: #009af3;
+}
+
+.HotSinger .itemTitle a.more:hover {
+    color: #009af3;
+}
+
+.HotSinger .itemContent .firstUl {
+    width: 100%;
+    position: relative;
+    height: 320px;
+}
+
+.HotSinger .itemContent .firstUl li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 330px;
+    height: 320px;
+}
+
+.HotSinger .itemContent .secondUl {
+    position: relative;
+    width: 330px;
+    height: 270px;
+}
+
+.cpt,
+.listItem {
+    position: relative;
+}
+
+.cpt img {
+    width: 100%;
+    height: 100%;
+}
+
+.HotSinger .cptMid {
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    margin: 0 5px 5px 0;
+    float: left;
+}
+
+.HotSinger .cptSmall {
+    width: 105px;
+    height: 105px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.HotSinger .cptMid .cptB {
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    /* background-color: RGBA(0, 0, 0, .3); */
+    color: #fff;
+    overflow: hidden;
+}
+
+.HotSinger .cptSmall .cptB {
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    /* background-color: RGBA(0, 0, 0, .3); */
+    color: #fff;
+    overflow: hidden;
+}
+
+.HotSinger .cptB .songListSinger {
+    line-height: 30px;
+    color: #fff;
+}

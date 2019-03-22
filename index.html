@@ -1,46 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
+<head lang="zh-CN">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/login.css">
-    <title>登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="css/public.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery_flexslider.js"></script>
+
 </head>
 
 <body>
-
-    <div class="login">
-        <div class="form">
-            <!-- <form action=""> -->
-            <!-- <fieldset id=""> -->
-            <div class="input-group  username">
-                <div class="input-group-addon"><i class="fa fa-user main_color"></i></div>
-                <span class="line"></span>
-                <input type="text" class="form-control username_input main_color" placeholder="用户名" />
+    <div style="text-align:center;clear:both;">
+        <!-- <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+        <script src="/follow.js" type="text/javascript"></script> -->
+    </div>
+    <div class="about-history" id="fzlc">
+        <header class="about-title title-white">
+            <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">作品展示廊</h3>
+            <p class="wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">WORKS</p>
+        </header>
+        <div class="about-history-list wow zoomIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                <ul class="slides clearfix list" style="width: 2600%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>echarts数据可视化1</h3>
+                            <div class="desc">
+                                <a class="detail" href="homepage.html">点击查看详情</a>
+                                <!-- <div class="desc-cover"></div> -->
+                                <img src="./image/1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>echarts数据可视化2</h3>
+                            <div class="desc">
+                                <a class="detail" href="dashboard.html">点击查看详情</a>
+                                <img src="./image/dashboard.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>静态页面</h3>
+                            <div class="desc">
+                                <a class="detail" href="guanlang.html">点击查看详情</a>
+                                <img src="./image/guanlang.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>仿酷狗首页</h3>
+                            <div class="desc">
+                                <a class="detail" href="kugou/kugou.html">点击查看详情</a>
+                                <img src="./image/kugou.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>3D机房系统</h3>
+                            <div class="desc">
+                                <a class="detail" href="./3D-Niagara/dist/index.html">点击查看详情</a>
+                                <img src="./image/3D.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>html+css固定布局1</h3>
+                            <div class="desc">
+                                <a class="detail" href="./code_1/index.html">点击查看详情</a>
+                                <img src="./image/code1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>响应式布局</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/code2.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>静态页面</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/code3.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>echarts数据可视化3</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/xiaoan.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>静态页面</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/anxiao1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>小游戏</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;">
+                        <div class="item">
+                            <h3>2006</h3>
+                            <div class="desc">
+                                <a class="detail">点击查看详情</a>
+                                <img src="./image/1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 253px; float: left; display: block;"></li>
+                </ul>
             </div>
-            <div class="input-group  password ">
-                <div class="input-group-addon"><i class="fa fa-lock main_color"></i></div>
-                <span class="line"></span>
-                <input type="password" class="form-control password_input main_color" placeholder="密码" />
+            <ul class="flex-direction-nav">
+                <li class="flex-nav-prev"><a class="flex-prev" href="#">&lt;</a></li>
+                <li class="flex-nav-next"><a class="flex-next" href="#">&gt;</a></li>
+            </ul>
+        </div>
+        <div class="swiper-container about-history-swiper hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2016</h3>
+                        <div class="desc">
+                            <!-- <p>公司立足于当下商业地产市场形势，优化自身资源配置，成立中正小雅，完美实现了婚庆产业链的高效整合。中正人携手并进，筑梦远航，共创辉煌！</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2015</h3>
+                        <div class="desc">
+                            <!-- <p>公司进行大项目组改制，深化管理层次，确定项目组责任制与分红制，集团凝聚力更上新的台阶。</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2014</h3>
+                        <div class="desc">
+                            <!-- <p>公司省内外业务进入全面发展阶段，中杭、中翔、中润等项目相继组建，集团公司实现新的跨越。</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2013</h3>
+                        <div class="desc">
+                            <!-- <p>5月，公司相继成立策划公司、苏州分公司、无锡分公司、公司战略调整，向集团化发展，合并旗下公司成立（杭州中正商业地产管理有限公司）</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2012</h3>
+                        <div class="desc">
+                            <!-- <p>全球金融危机下，公司稳步发展，全年仍创营业额达5亿</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2011</h3>
+                        <div class="desc">
+                            <!-- <p>公司版图不断扩张，走出浙江省，走出长三角，相继在安徽、江苏设立分公司</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <h3>2010</h3>
+                        <div class="desc">
+                            <!-- <p>织里中国童装城项目单项销售额达1.68亿。以杭州为大本营，面向浙江省，成立诸暨分公司</p> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="auto_login">
-                <label for="" class="checkBox"><input type="checkbox" /></label>
-                <span id="auto_login_text" class="main_color">&nbsp;&nbsp;自动登录</span>
-            </div>
-
-            <a href="homepage.html"><button class="btn">登&nbsp;&nbsp;&nbsp;录</button> </button></a>
-
-            <!-- </fieldset> -->
-            <!-- </form> -->
+            <div class="swiper-pagination about-history-pagination"></div>
         </div>
     </div>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                //phone
+            } else {
+                //PC
+                $(".about-history-list").flexslider({
+                    animation: "slide",
+                    slideshow: false,
+                    controlNav: false,
+                    itemWidth: 253,
+                    itemMargin: 31,
+                    prevText: "<",
+                    nextText: ">",
+                    move: 1
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

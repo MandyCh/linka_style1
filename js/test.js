@@ -127,9 +127,9 @@ var option_fac_ratio = {
 
 fac_ratio.setOption(option_fac_ratio);
 
-console.log($('.txt_fund'));
-console.log($('.img_fund'));
-console.log($('.fund').find('a'));
+// console.log($('.txt_fund'));
+// console.log($('.img_fund'));
+// console.log($('.fund').find('a'));
 $('.txt_fund').hover(function() {
     $('.txt_fund').addClass('active');
     $('.img_fund')[0].style.display = 'block'
